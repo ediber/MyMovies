@@ -1,6 +1,8 @@
 package com.mymovies;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -49,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
 
         String str = getResources().getString(R.string.text_name);
         text.setText(str);
+
+        RecyclerView recycler = findViewById(R.id.recycler);
+        MyAdapter adapter = new MyAdapter(getApplicationContext());
+        recycler.setAdapter(adapter);
+        recycler.setLayoutManager(new LinearLayoutManager(this));
 
     }
 
