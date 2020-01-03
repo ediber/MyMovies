@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MyAdapter extends RecyclerView.Adapter {
 
     private Context context;
-    List<String> lst;
+    List<String> lst;           //
     List<String> lst1;
 
     MyAdapter(Context context) {
