@@ -3,7 +3,7 @@ package com.mymovies;
 import android.content.Context;
 import android.widget.Toast;
 
-public class Printer {
+public class Printer implements IPrinter{
 
     public Printer(){
 
