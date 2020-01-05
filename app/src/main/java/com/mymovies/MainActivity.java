@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView text;
     private EditText edit;
     private Button openActivity;
+    private View button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,19 @@ public class MainActivity extends AppCompatActivity {
         text = findViewById(R.id.textView);
         edit = findViewById(R.id.editText);
         openActivity = findViewById(R.id.btn_open_activity);
+        button2 = findViewById(R.id.button2);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // Printer prt = new Printer();
+                //prt.print(getApplicationContext());
+
+                new Printer().print(getApplicationContext());
+
+
+            }
+        });
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
